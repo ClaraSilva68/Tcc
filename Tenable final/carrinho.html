@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css2/bootstrap.min.css">
+	<style>
+	 .container{
+	 display: block;
+    height: auto;
+    width: 1100px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 20px;
+	margin-top:30px;
+	 margin-bottom:25px;
+	 padding-bottom:35px;}
+ h3{
+ font-size: 32px;
+ font-weight: 500;
+ line-height: 42px;
+ text-align: center;
+}
+	
+</style>
+</head>
+<body>
+<header>
+<div class="row">
+		<div class="col-12">
+		    <nav class="navbar fixed-top navbar-light bg-green navbar-expand-lg" style="background-color: #008B8B;> 
+
+				<a href="index.php" class="navbar-brand">
+					<a href="../index.html"><IMG class="displayed" src="img/Tenable.gif" style="height:100px" ></a>
+				</a>
+				
+				<div class="collapse navbar-collapse justify-content-between" id="nav1">
+					<ul class="navbar-nav">
+						&nbsp;&nbsp;&nbsp;<A HREF="index.html"><b><font color="#DCDCDC">Principal</font></b></A> &nbsp;&nbsp;&nbsp;&nbsp;
+						<A HREF="peças.html"><b><font color="#DCDCDC">Novidades</font></b></A> &nbsp;&nbsp;
+						<A href="../php/loginFinal.php"><b><font color="#DCDCDC">Entrar</font></b></A>&nbsp;&nbsp;&nbsp;
+						<A href="Faleconosco.html"><font color="#DCDCDC"><b>Contato</font></b></A> &nbsp;&nbsp;
+						<A href="parcerias.html"><font color="#DCDCDC"><b>Parcerias</font></b></A>&nbsp;&nbsp;&nbsp;&nbsp;
+						<A href="php/compra2.php"><font color="#DCDCDC"><b>Compras</font></b></A> 
+						<h1><marquee  style="color:red"> Futuramente será conectado ao banco de dados</font></marquee><h1>
+						  
+																								
+					</ul>
+					
+				</div>
+			</nav>
+			
+		
+		</div>					
+	</div>
+	</header>
+	<div class="container"
+	
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a id="navTitle" class="navbar-brand" href="index.html"></a>
+	    </div>
+	  </div>
+	</nav>
+	
+	
+	<div class="container-fluid">
+	
+		<div class="form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control" id="desc" placeholder="nome do produto">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="amount" placeholder="Quantidade">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="value" placeholder="Valor">
+			</div>
+			<span id="btnUpdate" style="display: none;">
+				<span id="inputIDUpdate"></span>
+				<button onclick="updateData();" class="btn btn-default">Salvar</button>
+				<button onclick="resetForm();" class="btn btn-default">Cancelar</button>
+			</span>
+			<span id="btnAdd">
+				<button onclick="addData();" class="btn btn-default">Adicionar</button>
+				<button onclick="resetForm();" class="btn btn-default">Apagar  registro</button>
+				<button onclick="deleteList();" class="btn btn-default">Apagar lista</button>
+			</span>
+		</div>
+
+		<div id="errors" style="display: none;"></div>
+
+		<table id="listTable" class="table">
+		
+		</table>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<h4 class="text-center text-success">Total: <span id="totalValue">R$ 0,00</span></h4>
+		</div>
+	</nav>
+	</div>
+
+	
+</div>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/mainc.js"></script>
+</body>
+</html>
